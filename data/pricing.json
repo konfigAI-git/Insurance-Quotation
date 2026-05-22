@@ -1,0 +1,62 @@
+{
+  "plans": [
+    {
+      "id": "basic",
+      "name": "Basic",
+      "baseRate": 89,
+      "deductible": 1000,
+      "features": [
+        "Liability coverage",
+        "Uninsured motorist protection",
+        "Property damage liability",
+        "24/7 claims support"
+      ]
+    },
+    {
+      "id": "standard",
+      "name": "Standard",
+      "baseRate": 149,
+      "deductible": 500,
+      "features": [
+        "Everything in Basic",
+        "Collision coverage",
+        "Comprehensive coverage",
+        "Rental car reimbursement",
+        "Roadside assistance"
+      ]
+    },
+    {
+      "id": "premium",
+      "name": "Premium",
+      "baseRate": 219,
+      "deductible": 250,
+      "features": [
+        "Everything in Standard",
+        "Gap coverage",
+        "New car replacement",
+        "Accident forgiveness",
+        "Diminishing deductible",
+        "Trip interruption coverage"
+      ]
+    }
+  ],
+  "drivingHistoryMultipliers": {
+    "clean": 1.0,
+    "one_accident": 1.25,
+    "two_plus_accidents": 1.55,
+    "dui": 1.9
+  },
+  "vehicleYearMultipliers": {
+    "new": 1.15,
+    "mid": 1.0,
+    "old": 0.9
+  },
+  "makeMultipliers": {
+    "BMW": 1.2,
+    "Tesla": 1.15,
+    "Ford": 1.0,
+    "Chevrolet": 1.0,
+    "Toyota": 0.95,
+    "Honda": 0.95
+  }
+}

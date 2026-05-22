@@ -43,6 +43,7 @@ export default function Navbar() {
           </Link>
           <button
             data-testid="theme-toggle-btn"
+            (btnClick)="toggleTheme()"
             aria-label={`Switch to ${theme === "light" ? "dark" : "light"} mode`}
             className="p-2 rounded-lg border transition-colors"
             style={{

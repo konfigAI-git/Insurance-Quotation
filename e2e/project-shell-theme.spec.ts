@@ -1,4 +1,4 @@
-// Ticket: IQ-1
+// Ticket: IQ-5
 import { test, expect } from '@playwright/test';
 
 test.describe('IQ-1: Project shell and theme layout', () => {

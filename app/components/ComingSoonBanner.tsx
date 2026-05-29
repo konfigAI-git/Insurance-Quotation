@@ -8,28 +8,30 @@ export default function ComingSoonBanner() {
   if (!visible) return null;
 
   return (
-    <div
+    <button
+      type="button"
       data-testid="coming-soon-banner"
-      className="w-full flex items-center justify-between px-4 py-3 text-sm font-medium"
+      onClick={() => setVisible(false)}
+      aria-label="Close coming soon banner"
+      className="w-full flex items-center justify-between px-4 py-3 text-sm font-medium cursor-pointer hover:opacity-95 transition-opacity"
       style={{ backgroundColor: "#1d4ed8", color: "#ffffff" }}
     >
-      <div className="flex-1" />
-      <p
+      <span className="flex-1" />
+      <span
         data-testid="banner-text"
         className="flex-1 text-center"
       >
         Coming Soon: New Features!
-      </p>
-      <div className="flex-1 flex justify-end">
-        <button
+      </span>
+      <span className="flex-1 flex justify-end">
+        <span
           data-testid="banner-close-btn"
-          onClick={() => setVisible(false)}
-          aria-label="Close banner"
-          className="ml-4 p-1 rounded hover:opacity-70 transition-opacity"
+          aria-hidden="true"
+          className="ml-4 p-1 rounded"
         >
           &#x2715;
-        </button>
-      </div>
-    </div>
+        </span>
+      </span>
+    </button>
   );
 }

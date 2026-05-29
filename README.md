@@ -7,7 +7,7 @@ Auto insurance quote generator built with Next.js 16 (App Router) and Tailwind C
 - **Multi-step quote form** (Personal Info → Vehicle Info → Driving & Coverage)
 - **Real-time pricing** calculated from mock JSON data
 - **Light/Dark mode** toggle with localStorage persistence
-- **Dismissible coming soon banner** on the home page
+- **Dismissible coming soon banner** on the home page that closes when clicked
 - **Quote summary** with save, edit, and download actions
 - **Quote history** from localStorage
 

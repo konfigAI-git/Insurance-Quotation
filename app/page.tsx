@@ -1,11 +1,14 @@
 import Link from "next/link";
+import ComingSoonBanner from "./components/ComingSoonBanner";
 
 export default function HomePage() {
   return (
     <div
       data-testid="home-page"
-      className="flex-1 flex flex-col items-center justify-center px-4 py-20"
+      className="flex-1 flex flex-col"
     >
+      <ComingSoonBanner />
+    <div className="flex-1 flex flex-col items-center justify-center px-4 py-20">
       <div className="max-w-3xl w-full text-center">
         <div
           className="inline-block px-4 py-1 rounded-full text-sm font-medium mb-6"
@@ -77,6 +80,7 @@ export default function HomePage() {
           ))}
         </div>
       </div>
+    </div>
     </div>
   );
 }
